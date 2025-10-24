@@ -5,7 +5,7 @@
     LogName = 'System'
     Level = 2                # 2 = Error, 3 = Warnings
     StartTime = (Get-Date).AddDays(-10)
-} | Select-Object TimeCreated, Id, ProviderName, Message
+    } | Select-Object TimeCreated, Id, ProviderName, Message
 
 **💬 2. Proveďte konverzi hexadecimální hodnoty řetězce do ascii. $s = "506f7765727368656c6c20697320617765736f6d6521"**
 
