@@ -22,9 +22,6 @@
         New-ItemProperty -Path $Path -Name $Name -Value $TargetValue -PropertyType String
         Write-Host "[OK] Hodnota 'InitialKeyboardIndicators' byla vytvořena a nastavena na $TargetValue." -ForegroundColor Green
     }
-    catch {
-        Write-Error "Došlo k chybě. Spouštíte PowerShell jako administrátor? Chyba: $($_.Exception.Message)"
-    }
 
 **💬 2. Vytvořte podklíč registru HKEY_CURRENT_USER, který nazvete Hrátky s PowerShellem. V něm vytvořte hodnoty obsahující jméno vašeho uživatelského účtu, jméno počítače, aktuální datum a verzi PowerShellu. Pro potvrzení provedené akce si všechny tyto informace vypište.
 
