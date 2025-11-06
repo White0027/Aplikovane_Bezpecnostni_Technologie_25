@@ -65,7 +65,7 @@ while ($true) {
     switch ($inputLower) {
         "q" {
             Write-Host "Konec programu."
-            break 
+            return 
         }
         "u" {
             try {
